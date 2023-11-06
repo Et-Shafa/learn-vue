@@ -1,6 +1,10 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <!-- test -->
+  <input type="text" v-model="name"/>
+  <h4>Name: {{ name }}</h4>
 </template>
 
 <script>
@@ -8,6 +12,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  // test
+  data(){
+    return{
+      name:"",
+    };
+  },
+  //test
   components: {
     HelloWorld
   }
